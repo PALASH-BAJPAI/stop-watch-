@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>STOPWATCH</title>
+        <script type="text/javascript">
+ 
+var time=0;
+var id;
+function fun()
+{
+    document.getElementById("op").innerHTML=time+" seconds";
+    time++;
+}
+function start()
+{
+  id=window.setInterval(fun,1000)
+}
+function stop()
+{
+    window.clearInterval(id);
+}
+function abc()
+{
+    document.getElementById("op").innerHTML="restart -click start";
+    location.reload();
+}
+
+           </script>
+        
+
+<style type="text/css">
+    body{
+      background-image: url("astronomy-3187445_960_720.jpg");
+      background-size: cover;
+  
+      justify-content: center; 
+      align-content: center; 
+      align:center;
+       position: relative;
+top:250px;
+left:540px;
+    }
+
+   h2{  margin:0;     
+       padding:0;
+       text-align: center;
+       position: absolute;
+       
+       left:-150px;
+       color:white;
+       font-size:70px;
+       font-family: Alien Encounters;
+       border : 3px solid red;
+       background-color:rgba(0,0,0,0.7);
+       width: 500px;
+
+    } 
+   #b1{
+       position:absolute;
+       
+       font-size: 32px;
+       text-decoration: none;
+       background:linear-gradient(90deg,red,black);
+       text-shadow: 6px 3px 2px rgba(1,1,1,.5);
+       padding-top:20px;
+       padding-left: 20px;
+       padding-right: 20px;
+       padding-bottom: -6px;
+       border-radius: 600px;
+       color:#fff;
+       letter-spacing: 1px;
+       transition: .5s;
+       overflow: hidden;
+       box-shadow:-4px .5px 9px 4px rgba(255,255,255,.3) ;
+             text-align: center;
+	justify-content:center;
+    align-items: center;
+    padding:7px;
+    left:3%;
+
+	
+    }
+   #b3
+    {
+        position:absolute;
+       
+        font-size: 32px;
+        text-decoration: none;
+        background:linear-gradient(90deg,red,black);
+        text-shadow: 6px 3px 2px rgba(1,1,1,.5);
+        padding-top:20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: -6px;
+        border-radius: 600px;
+        color:#fff;
+        letter-spacing: 1px;
+        transition: .5s;
+        overflow: hidden;
+        box-shadow:-4px .5px 9px 4px rgba(255,255,255,.3) ;
+              text-align: center;
+     justify-content:center;
+     align-items: center;
+     padding:7px;
+     left:19%;
+    
+        
+    }
+    #b2
+    {
+       
+        font-size: 32px;
+        text-decoration: none;
+        background:linear-gradient(90deg,red,black);
+        text-shadow: 6px 3px 2px rgba(1,1,1,.5);
+        padding-top:20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: -6px;
+        border-radius: 600px;
+        color:#fff;
+        letter-spacing: 1px;
+        transition: .5s;
+        overflow: hidden;
+        box-shadow:-4px .5px 9px 4px rgba(255,255,255,.3) ;
+              text-align: center;
+     justify-content:center;
+     align-items: center;
+     padding:7px;
+     position: absolute;
+     left:-13%;
+     
+ 
+       
+    }
+    h1{
+       position: absolute;
+       top:-270px;
+       left:-10px;
+       font-weight: italic;
+       color: blanchedalmond;
+    font-family: Franklin Gothic Book;
+         }
+        
+
+
+
+</style>
+    </head>
+    <body >
+        <!-- <hi>DESIGNED BY PALASH</hi> -->
+<button onclick="start()" id="b1" >START </button><br><br><br><br>
+<h2 id="op" >STOPWATCH</h2><br><br><br><br><br>
+<button onclick="stop()" id="b2">STOP</button>
+<button onclick="abc()" id="b3">RESET</button>
+<p>
+   <h1>MADE BY-PALASH</h1> 
+        </p>
+    </body>
+    </html>
